@@ -16,8 +16,6 @@ if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
 
-" Use :help 'option' to see the documentation for the given option.
-
 set autoindent
 set autoread
 set backspace=indent,eol,start
@@ -29,6 +27,7 @@ set directory=~/.vim/tmp " Swap file directory
 set encoding=utf-8
 set expandtab
 set fileformats+=mac
+set undodir=~/.vim/undo
 set hidden
 set history=1000
 set hlsearch
