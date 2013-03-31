@@ -59,7 +59,8 @@ hi SpecialKey ctermbg=yellow guibg=yellow
 " Too lazy to press shift...
 nnoremap ; :
 " Unhighlight search
-nnoremap <silent> \\ :let @/ = ''<CR>
+nnoremap <silent> \\ :nohlsearch<CR>
+command Pa set invpaste
 
 " In GVIM, Shift-Direction scrolls the window, which I hate.
 nnoremap <S-UP> k
