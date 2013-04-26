@@ -8,13 +8,12 @@ else
   let g:loaded_sensible = 1
 endif
 
-if has('autocmd')
-  filetype plugin indent on
-endif
-
 if has('syntax') && !exists('g:syntax_on')
   syntax enable
 endif
+
+command! EditBaseSettings execute 'edit ' . $HOME .
+    \ '/.vim/bundle/vim-unsensible/plugin/unsensible.vim'
 
 set autoindent
 set autoread
@@ -51,6 +50,8 @@ set tabpagemax=50
 set tabstop=4
 set ttimeout
 set ttimeoutlen=50
+set splitbelow
+set splitright
 set wildmode=longest,list,full
 
 hi StatusLine ctermfg=cyan guiFg=cyan
@@ -58,9 +59,17 @@ hi SpecialKey ctermbg=yellow guibg=yellow
 
 " Too lazy to press shift...
 nnoremap ; :
+
 " Unhighlight search
 nnoremap <silent> \\ :nohlsearch<CR>
+
+" Psate Toggle
 command Pa set invpaste
+
+inoremap <silent> <Down> <C-o>gj
+inoremap <silent> <Up> <C-o>gk
+nnoremap <silent> <Down> gj
+nnoremap <silent> <Up> gk
 
 " In GVIM, Shift-Direction scrolls the window, which I hate.
 nnoremap <S-UP> k
