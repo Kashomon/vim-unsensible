@@ -21,7 +21,6 @@ set autoread
 set backspace=indent,eol,start
 set backup
 set backupdir=~/.vim/backup
-set clipboard=unnamed
 set complete-=i
 set directory=~/.vim/tmp " Swap file directory
 set encoding=utf-8
