@@ -50,7 +50,7 @@ set tabstop=4
 set ttimeout
 set ttimeoutlen=50
 set splitbelow
-set splitright
+" set splitright
 set wildmode=longest,list,full
 
 hi StatusLine ctermfg=cyan guiFg=cyan
