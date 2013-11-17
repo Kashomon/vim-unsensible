@@ -20,7 +20,6 @@ set autoread
 set backspace=indent,eol,start
 set backup
 set backupdir=~/.vim/backup
-set clipboard=unnamed
 set complete-=i
 set directory=~/.vim/tmp " Swap file directory
 set encoding=utf-8
@@ -50,6 +49,10 @@ set tabpagemax=50
 set tabstop=4
 set ttimeout
 set ttimeoutlen=50
+<<<<<<< HEAD
+=======
+" set splitbelow
+>>>>>>> bbedd7317fc393f1fe4d2564a88fa320fc57fb84
 set splitright
 set wildmode=longest,list,full
 
