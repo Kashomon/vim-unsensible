@@ -50,7 +50,6 @@ set tabpagemax=50
 set tabstop=4
 set ttimeout
 set ttimeoutlen=50
-set splitbelow
 set splitright
 set wildmode=longest,list,full
 
@@ -79,8 +78,6 @@ inoremap <S-DOWN> j
 
 autocmd BufNewFile,BufEnter * silent! lcd %:p:h
 let g:netrw_keepdir = 0
-
-au BufNewFile,BufRead * set formatoptions+=t
 
 autocmd BufEnter * let &titleold=""
 autocmd BufEnter * let &titlestring=expand("%")
